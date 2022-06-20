@@ -457,7 +457,7 @@ body {
 .header {
   position: relative;
   height: 60px;
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
   background-color: #FFFF;
   font-weight: 500;
   font-size: 14px;
@@ -519,7 +519,7 @@ body {
   position: relative;
   text-decoration: none;
   color: #2196F3;
-  padding-bottom: 32px;
+  padding-bottom: 41px;
 }
 
 .header .link.current::after {
