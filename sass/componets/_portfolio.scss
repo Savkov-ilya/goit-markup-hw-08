@@ -1,7 +1,10 @@
 .page {
-  padding-top: 60px;
-  padding-bottom: 40px;
-
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (min-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @include padinAuto;
 
   font-family: "Roboto";
@@ -20,15 +23,20 @@
   &-nav {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 40px;
+    }
 
     @media screen and (min-width: 767px) {
       justify-content: center;
       align-items: center;
+      margin-bottom: 30px;
     }
   }
 }
-.page-work + .page-work {
+.page-work {
   margin-left: 8px;
 }
 
@@ -47,6 +55,10 @@
   }
   &-item {
     margin: 15px;
+
+    @media screen and (min-width: 480px) {
+      margin: 30px;
+    }
 
     @media screen and (min-width: 767px) {
       width: calc((100% - 60px) / 2);

@@ -24,6 +24,8 @@
     }
   }
   &-hero {
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: 480px) {
       width: 100%;
     }
