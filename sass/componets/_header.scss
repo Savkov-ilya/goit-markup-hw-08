@@ -12,8 +12,8 @@
     letter-spacing: 0.02em;
     .adress {
             margin: 0;    
-            &-li {
-    
+            &-li, &-phone {
+               
                 transition: color 250ms $timing-function, fill 250ms $timing-function;
     
                 color: $primery-text-color;
@@ -76,13 +76,12 @@
                         height: 4px;
                         border: 2px;
                 
-                        background-color: $acsent-color;
-                         
+                        background-color: $acsent-color;                        
         
-        }
+                }
        
-    }
-}
+             }
+        }
       
         
     .nav {
@@ -109,10 +108,13 @@
                 display: flex;
                 margin-left: auto;
                 flex-direction: column;       
-                justify-content: center;    
+                justify-content: center;
+                    
             }
         }
         .link {
+           
+            @include padinTopBot (32px);
             width: 49px;
             height: 16px;
             font-weight: 500;
@@ -120,13 +122,15 @@
             line-height: 1.2;
             letter-spacing: 0.02em;
         }
-        .nav-phone{
-            padding-bottom: 21px;
-        }
+        
         .adress {
-            padding-top: 21px;
+            display: flex;
             margin-bottom: 10px;
+            font-weight: 500;
+                font-size: 12px;
+                line-height: 1.2;
             
+                letter-spacing: 0.02em;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -137,31 +141,36 @@
         
             color: $primery-text-color;
             }
-            &-li {
-                display: flex;
+            &-li {               
+                padding-top: 21px;
                 
-                font-weight: 500;
-                font-size: 12px;
-                line-height: 1.2;
-                
-                letter-spacing: 0.02em;
+            }
+            &-phone {
+                padding-bottom: 21px;
             }
         
+        }
+        .item { 
+                     
+            padding: 0;
         }
     }
     
     @media screen and (min-width: 1200px) {               
         .nav {
             &-site {                   
-                 margin-left: 93px;
+                margin-left: 93px;
             }
             &-auto {
             display: flex;
             flex-direction: row;
+            margin: 0;
             margin-left: auto;
+           
                                   
             }
         }
+       
         .nav-phone {
         @include padinTopBot (32px);
         }
@@ -173,7 +182,7 @@
             font-size: 14px;
             line-height: 1.2;
             letter-spacing: 0.02em;
-            @include padinTopBot (32px);
+           
             &:last-child {
                 margin-right: 0;
            
@@ -186,18 +195,23 @@
                 color: $primery-text-color;
             }
             &-li {
+                @include padinTopBot (32px);
                 margin-right: 10px;
                 &:last-child {
                     margin-right: 0;
 
                 }
+               
+            }
+             &-phone {
+                @include padinTopBot (32px);
             }
                 
         }
        
     }        
 }
-.current {
+/*.current {
     position: relative;
    
     
@@ -215,7 +229,7 @@
 
         background-color: $acsent-color;
     }
-}
+}*/
 
 .icon-cross {
     @media screen and (min-width: 767px) {
