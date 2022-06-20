@@ -2139,11 +2139,11 @@ body {
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
 }
 
-.page-work:nth-child(-n+3) {
+.page-work:nth-child(-n + 3) {
   margin-bottom: 15px;
 }
 
@@ -2202,13 +2202,13 @@ body {
 
 @media screen and (min-width: 767px) {
   .photo-item {
-    width: calc((100% - 60px)/2);
+    width: calc((100% - 60px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .photo-item {
-    width: calc((100% - 90px)/3);
+    width: calc((100% - 90px) / 3);
   }
 }
 
@@ -2268,7 +2268,7 @@ body {
 
 .overlay {
   position: relative;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .overlay-text {
@@ -2307,7 +2307,7 @@ body {
 .text-container {
   margin-bottom: 0;
   padding: 24px 20px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 @media screen and (min-width: 767px) {
